@@ -61,7 +61,7 @@ A Spring Boot-based RESTful API for managing users, projects, and tasks with JWT
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Prerequisites
-- Java 17 or 21
+- Java  21
 - Maven
 - MySQL running locally (port 3306)
 
