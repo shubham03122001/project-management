@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "6d669d4d-91dd-4445-a79d-8d4fd44a07a2",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31418111"
+	},
+	"item": [
+		{
+			"name": "Add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shubham kamble 5425\",\r\n    \"email\":\"shubhamkamble5425@gmail.com\",\r\n    \"password\":\"shubhamkamble5425\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/auth/registeruser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"auth",
+						"registeruser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-All-Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shubham kamble\",\r\n    \"email\":\"shubhamkamble8541@gmail.com\",\r\n    \"password\":\"shubhamkamble8541\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/auth/getallusers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"auth",
+						"getallusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shubhamkamble8541@gmail.com\",\r\n    \"password\":\"shubhamkamble8541\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzaHViaGFta2FtYmxlNTQyNUBnbWFpbC5jb20iLCJpYXQiOjE3NjI4NTIxMzAsImV4cCI6MTc2Mjg1NTczMH0.uAB_Cjga74qUsHVz-nq6dKZVeRpxqAxNzquTpGO3YrHxoBr13rKkM0PIPc13QulQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Inventory Management System\",\r\n  \"description\": \"Helps manage stock, suppliers, and purchase orders for retail stores\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/projects",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzaHViaGFta2FtYmxlNTQyNUBnbWFpbC5jb20iLCJpYXQiOjE3NjI4NjgxMTAsImV4cCI6MTc2Mjg3MTcxMH0.AjGb2mw90WRFEvtvqV6KPGBbVUgDx_ZBGLYsGjZgVLgERMbZ1x2kM2nUBwF6k-ns",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Portfolio Website\",\r\n    \"description\": \"Personal portfolio website showcasing all my projects as well as skills\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/projects/updateProjectByID/997541e7-a9eb-47aa-9211-36d0918f377d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"projects",
+						"updateProjectByID",
+						"997541e7-a9eb-47aa-9211-36d0918f377d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-projects",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzaHViaGFta2FtYmxlNTQyNUBnbWFpbC5jb20iLCJpYXQiOjE3NjI4NTUzMjMsImV4cCI6MTc2Mjg1ODkyM30.uXjoN1TOMrdUlK0TKHeqSiaUnhzZQQeH7wZ2Ca_ll_t4euZvCzlEnF8kgtU0UPrJ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/projects/getAllProjects",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"projects",
+						"getAllProjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzaHViaGFta2FtYmxlNTQyNUBnbWFpbC5jb20iLCJpYXQiOjE3NjI4ODM4NDEsImV4cCI6MTc2Mjg4NzQ0MX0.mQMdq-dnObeJ7i8s-GxYej6FOCBRAnpWuW0PcCMN8HpQDlTtDuRQE4SStEEbefCR",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Implement contact form\",\r\n  \"description\": \"Create contact form with validation and send email using a backend API.\",\r\n  \"status\": \"IN_PROGRESS\",\r\n  \"priority\": \"HIGH\",\r\n  \"dueDate\": \"2025-11-25\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/tasks/project/997541e7-a9eb-47aa-9211-36d0918f377d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"tasks",
+						"project",
+						"997541e7-a9eb-47aa-9211-36d0918f377d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
