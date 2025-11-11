@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Shubham kamble 5425\",\r\n    \"email\":\"shubhamkamble5425@gmail.com\",\r\n    \"password\":\"shubhamkamble5425\"\r\n}",
+					"raw": "{\r\n    \"name\":\"Shubham kamble 5425\",\r\n    \"email\":\"shubhamkamble123@gmail.com\",\r\n    \"password\":\"shubhamkamble123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -45,7 +45,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Shubham kamble\",\r\n    \"email\":\"shubhamkamble8541@gmail.com\",\r\n    \"password\":\"shubhamkamble8541\"\r\n}",
+					"raw": "{\r\n    \"name\":\"Shubham kamble\",\r\n    \"email\":\"shubhamkamble123@gmail.com\",\r\n    \"password\":\"shubhamkamble123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -74,7 +74,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"shubhamkamble8541@gmail.com\",\r\n    \"password\":\"shubhamkamble8541\"\r\n}",
+					"raw": "{\r\n    \"email\":\"shubhamkamble123@gmail.com\",\r\n    \"password\":\"shubhamkamble123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
